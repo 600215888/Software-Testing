@@ -1,0 +1,77 @@
+ghub: ''
+url: ist-git@git.uwaterloo.ca:stqam-1221/class/h843zhan
+student: 20887285
+watiam: h843zhan
+late:
+  count: 1
+total_marks: 56.85
+1a:
+  mark: 2
+  comments: |
+    none
+1b:
+  mark: 2
+  comments: |
+    none
+1c:
+  mark: 0
+  comments: |
+    anything with incompatible dimensions (or that raises an exception later, for example a matrix that contains something other than numbers)
+1d:
+  mark: 1.75
+  comments: |
+    pc = 8
+1e:
+  mark: 2
+  comments: |
+    none
+2a:
+  mark: 3
+  comments: |
+    none
+2b:
+  mark: 2.5
+  comments: "should be <b,q'> \u21D3  true and also <b,q\"> \u21D3 false\n"
+2c:
+  mark: 3
+  comments: |
+    derivation tree should be complete
+2d:
+  mark: 3
+  comments: |
+    should prove two cases for each part of the proof
+3b:
+  mark: 6
+  comments: |
+    none
+3c:
+  mark: 3
+  comments: |
+    none
+3a:
+  mark: 6.0
+  comments: |
+    coverage: 3.0/3;mutation: 3/3
+    Marking partially automated
+4a:
+  mark: 10.0
+  comments: |
+    Lack of coverage explanation: none
+
+    Marking partially automated
+4b:
+  mark: 4
+  comments: |
+    Lack of coverage explanation: none
+
+    Marking partially automated
+4c:
+  mark: 5.1
+  comments: |
+    Marking automated
+4d:
+  mark: 3.5
+  comments: |
+    Marking automated
+stats_visitor_tests: 13/26
+undef_visitor_tests: 3/10

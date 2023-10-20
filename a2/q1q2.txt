@@ -1,0 +1,61 @@
+Q1
+
+(a)
+Prog1 has 4 execution paths.
+i)   1->2->3->4->9->11->12->13->17
+ii)  1->2->3->4->9->11->14->15->16->17
+iii) 1->2->5->6->7->9->11->12->13->17
+iv)  1->2->5->6->7->9->11->14->15->16->17
+(b)
+i)
+1->2    x->Xo, y->Yo               true
+2->3    x->Xo, y->Yo               Xo+Yo>15
+3->4    x->Xo+7, y->Yo             Xo+Yo>15
+4->9    x->Xo+7, y->Yo-12          Xo+Yo>15
+9->11   x->Xo+9, y->Yo-12          (Xo+Yo)>15
+11->12  x->Xo+9, y->Yo-12          (Xo+Yo)>15  and  2*(Xo+Yo-3)>21
+12->13  x->(Xo+9)*3, y->Yo-12      (Xo+Yo)>15  and  2*(Xo+Yo-3)>21
+13->17  x->(Xo+9)*3, y->(Yo-12)*2  (Xo+Yo)>15  and  2*(Xo+Yo-3)>21
+
+ii)
+1->2    x->Xo, y->Yo                          true
+2->3    x->Xo, y->Yo                          Xo+Yo>15
+3->4    x->Xo+7, y->Yo                        Xo+Yo>15
+4->9    x->Xo+7, y->Yo-12                     Xo+Yo>15
+9->11   x->Xo+9, y->Yo-12                     (Xo+Yo)>15
+11->14  x->Xo+9, y->Yo-12          	      (Xo+Yo)>15 and 2*(Xo+Yo-3)<=21
+14->15  x->Xo+9, y->Yo-12                     (Xo+Yo)>15 and 2*(Xo+Yo-3)<=21
+15->16  x->(Xo+9)*4, y->Yo-12                 (Xo+Yo)>15 and 2*(Xo+Yo-3)<=21
+16->17  x->(Xo+9)*4, y->Yo*3+Xo*4    	      (Xo+Yo)>15 and 2*(Xo+Yo-3)<=21
+
+iii)
+1->2    x->Xo, y->Yo                          true
+2->5    x->Xo, y->Yo 			      Xo+Yo<=15
+5->6    x->Xo, y->Yo 			      Xo+Yo<=15
+6->7    x->Xo, y->Yo+10 		      Xo+Yo<=15
+7->9    x->Xo-2, y->Yo+10		      Xo+Yo<=15
+9->11   x->Xo, y->Yo+10          	      Xo+Yo<=15
+11->12  x->Xo, y->Yo+10                       Xo+Yo<=15  and 2*(Xo+Yo+10)>21
+12->13  x->Xo*3, y->Yo+10 		      Xo+Yo<=15  and 2*(Xo+Yo+10)>21
+13->17  x->Xo*3, y->(Yo+10)*2                 Xo+Yo<=15  and 2*(Xo+Yo+10)>21
+
+iv)
+1->2    x->Xo, y->Yo                          true
+2->5    x->Xo, y->Yo 			      Xo+Yo<=15
+5->6    x->Xo, y->Yo 			      Xo+Yo<=15
+6->7    x->Xo, y->Yo+10 		      Xo+Yo<=15
+7->9    x->Xo-2, y->Yo+10		      Xo+Yo<=15
+9->11   x->Xo, y->Yo+10          	      Xo+Yo<=15
+11->14  x->Xo, y->Yo+10			      Xo+Yo<=15  and 2*(Xo+Yo+10)<=21
+14->15  x->Xo, y->Yo+10			      Xo+Yo<=15  and 2*(Xo+Yo+10)<=21
+15->16  x->Xo*4, y->Yo+10		      Xo+Yo<=15  and 2*(Xo+Yo+10)<=21
+16->17  x->Xo*4, y->(Yo+10)*3+Xo*4	      Xo+Yo<=15  and 2*(Xo+Yo+10)<=21 
+(c)
+feasible    Xo=15, Yo=5
+Not feasible
+feasible    Xo=3, Yo=3
+feasible    Xo=1, Yo=1
+
+Q2
+
+(a)

@@ -1,0 +1,25 @@
+From a08e4d3c198839f914d22d5f0e37232f6934028d Mon Sep 17 00:00:00 2001
+From: 600215888 <98623714+600215888@users.noreply.github.com>
+Date: Tue, 14 Jun 2022 02:35:52 +0000
+Subject: [PATCH] initial commit
+
+---
+ src/w_file.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/w_file.c b/src/w_file.c
+index a2e6f8cd..63fda1d1 100644
+--- a/src/w_file.c
++++ b/src/w_file.c
+@@ -86,7 +86,7 @@ wad_file_t *W_OpenFile(const char *path)
+             break;
+         }
+     }
+-
++    result=true;
+     return result;
+ }
+ 
+-- 
+2.17.1
+
